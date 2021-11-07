@@ -1,0 +1,21 @@
+var string = 'hello wordl!';
+var num = 8; 
+var arr = [string+ 'my lucky num is' + num];
+var yes = true; 
+var none = null;
+var unDefine = undefined;
+var sym = Symbol('foo'); 
+
+console.log(string);
+console.log('--------------------');
+console.log(num);
+console.log('--------------------');
+console.log(arr);
+console.log('--------------------');
+console.log(yes);
+console.log('--------------------');
+console.log(none);
+console.log('--------------------');
+console.log(unDefine);
+console.log('--------------------');
+console.log(sym);
