@@ -1,11 +1,11 @@
 function date() {
-let dateObj = new Date();
-let day = dateObj.toLocaleString('en-us', {  weekday: 'long' });
-let monthName = dateObj.toLocaleString('default', { month: 'long' });
-let month = dateObj.getUTCMonth() + 1;
-let year = dateObj.getUTCFullYear();
+let myDate = new Date();
+let day = myDate.toLocaleString('en-us', {  weekday: 'long' });
+let monthName = myDate.toLocaleString('default', { month: 'long' });
+let monthDay = myDate.getDate();
+let year = myDate.getUTCFullYear();
 
- const todayDate = 'Today is '+day+ ' the '+ month + ' of '+ monthName+ ', '+ year;
+ let todayDate = 'Today is '+day+ ' the '+ monthDay + ' of '+ monthName+ ', '+ year;
  return todayDate; 
 
 }
