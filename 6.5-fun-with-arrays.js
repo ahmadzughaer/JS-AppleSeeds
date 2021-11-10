@@ -2,7 +2,7 @@
 let filledArr1 = new Array(100).fill({'10':'8'});
 console.log(filledArr1)
 
-let filledArr2 = Array.from(Array(100).keys())
+let filledArr2 = Array.from(Array(101).keys()).slice(1);
 console.log(filledArr2)
 
 let object = {'hello': 'world', 'hey': 'you', 'good': 'fine'};
