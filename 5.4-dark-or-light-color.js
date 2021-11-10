@@ -1,4 +1,5 @@
 const darkOrLight = (color) => {
+    color = color.toLowerCase();
     switch (color) {
         case 'yellow':
         case 'pink':
@@ -16,6 +17,6 @@ const darkOrLight = (color) => {
 }
 
 darkOrLight('red');
-darkOrLight('purple');
+darkOrLight('Purple');
 darkOrLight('pink');
 
