@@ -4,7 +4,7 @@ let book2 = { name: 'the idiot', author: 'Fyodor Dostoevsky', year: 1869, rating
 const bookUtils = {};
 
 bookUtils.getFirstPublished =  (book1, book2) => {
-    if (book1.yearPublished < book2.yearPublished) {
+    if (book1.year < book2.year) {
         return book1;
     } else {
         return book2;
@@ -51,7 +51,7 @@ bookUtils.setTranslator(book2, { translator: "newOne", language: "Arabic" });
 bookUtils.setPublisher(book1, { name: "MrBooks", location: "Canada" });
 bookUtils.setPublisher(book2, { name: "test", location: "Eygpt" });
 
-console.log(bookUtils.getFirstPublished(book1.year, book2.year));
+console.log(bookUtils.getFirstPublished(book1, book2));
 console.log(bookUtils.isSamePublisher(book1, book2));
 
 console.log('-'.repeat(30)+'Book1'+'-'.repeat(30))
