@@ -1,8 +1,12 @@
 const videoLibrary = (obj) => { // using forEach to iterate object values
-    obj.forEach( (el) => {
-     let id = el.id;
-     let title = el.title;
-     console.log('Movie name is: '+ title+' and its id is: '+id)
+    obj.forEach((el) => {
+        let id = el.id;
+        let title = el.title;
+        obj = {
+            id, title
+        }
+        const arr =[obj];
+        console.log(arr)
     })
 }
 
@@ -10,7 +14,7 @@ const videoLibrary2 = (obj) => {
     obj.map((el) => {
         let id = el.id;
         let title = el.title;
-        console.log('Movie name is: '+ title+' and its id is: '+id)
+        console.log('Movie name is: ' + title + ' and its id is: ' + id)
     })
 }
 
