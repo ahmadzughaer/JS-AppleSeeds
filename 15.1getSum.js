@@ -1,7 +1,7 @@
 function getSum(arr1, arr2) {
     let sum = 0; // change it to let
 
-    for (let i = 0; i < arr1.length; i++) { // Cannot read properties of undefined (reading 'length')
+    for (let i = 0; i < arr1.length; i++) { // Cannot read properties of undefined (reading 'length') because in line 122 the comma is missing
         sum += arr1[i]; // sum is const you can't change 
     }
     for (let j = 0; j < arr2.length; j++) { // it's working like this but it better to change i to j or whatever you want
