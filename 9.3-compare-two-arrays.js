@@ -18,10 +18,9 @@ const nestedLoop2 = (arr1, arr2) => {
 }
 
 
-const food = ["Noodle", "Pasta", "Meat",
-    "Cucumber"];
+const food = ["Noodle", "Meat","Cucumber"];
 
 
-const food1 = ["Fries", "Pasta", "Hamburgers"];
+const food1 = ["Fries", "Pasta", "Hamburgers", "flafel"];
 console.log(nestedLoop2(food, food1));
 

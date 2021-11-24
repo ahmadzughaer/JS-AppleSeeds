@@ -25,9 +25,9 @@ console.log(a); // log 1
 
 let i;
 for (i = 0; i < 3; i++) {
- const log = () => {
- console.log(i);
- }
- setTimeout(log, 100);
+    const log = () => {
+        console.log(i);
+    }
+    setTimeout(log, 0);
 }
 // already explained with var as a global variable it will log 3 3times

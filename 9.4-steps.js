@@ -1,5 +1,4 @@
 
-
 const steps = (num) => {
     for (let i = 0; i < num; i++) {
         let newStr = "";
@@ -8,8 +7,9 @@ const steps = (num) => {
         }
         console.log(newStr);
     }
-
 }
 
 steps(10);
+
+
 

@@ -62,7 +62,7 @@ const capitalize = (str) => { // section 5
 console.log(capitalize('hey hello'));
 
 const shiftLetters = (str) => { // section 6
-    let txt = str.split('');
+    let txt = str.toLowerCase().split('');
     const letters = 'abcdefghijklmnopqrstuvwxyz';
     let shifted = [];
     txt.forEach((el) => {

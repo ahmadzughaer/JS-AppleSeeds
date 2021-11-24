@@ -69,17 +69,17 @@ const foodTyeps = (obj) => { // section 3
     obj.forEach((el) => {
         let meat = el.favoriteFoods.meats;
         let fish = el.favoriteFoods.fish;
-        food.push(fish);
         food.push(meat);
+        food.push(fish);
         merged = food.flat(1);
     });
 
     merged.forEach((el) => {
         if (objs[el]) {
-            return objs[el]++;
+            objs[el]++;
         }
         else {
-            return objs[el] = 1;
+            objs[el] = 1;
         }
     });
     return objs;

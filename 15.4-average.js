@@ -1,4 +1,4 @@
-function calcAverage(arr) {
+function calcAverage(arr) { // vs debugger
     var sum =0; // it will return NaN because we did not assign anything to sum
     console.log(arr.length);
     for (var i = 0; i < arr.length; i++) {

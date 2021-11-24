@@ -16,9 +16,9 @@ var library = [
     }
     ];
 
-const readAble =(obj) => {
-let book = obj.filter(el =>  el.readingStatus === true)
+const readAble =(obj, boolean) => {
+let book = obj.filter(el =>  el.readingStatus === boolean)
 return book;
 }
 
-console.log(readAble(library));
+console.log(readAble(library, true));

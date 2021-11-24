@@ -34,13 +34,13 @@ const powerExp = a =>{return Math.pow(a, 2);}
 // const squareRoot = a => Math.sqrt(a);
 
 ((a) => {
-    return console.log(Math.sqrt(a));
-})(5);
+    return console.log(Math.sqrt(a))
+})(9);
 
 
 
 // const randomNumbers = (a, b) => Math.random() * (a - b) + b;
 
 ((a, b) => {
-    return console.log(Math.random() * (a - b) + b);
+    return console.log(Math.random() * (a - b) + b)
 })(5, 6);

@@ -17,20 +17,19 @@ const checkWinner = () => {
     else if(maryTeamAvg > johnTeamAvg && maryTeamAvg > mikeTeamAvg) {
         console.log('Mary Team are the winners')
     }
-    else if(maryTeamAvg == johnTeamAvg && maryTeamAvg > mikeTeamAvg) {
+    else if(maryTeamAvg === johnTeamAvg && maryTeamAvg > mikeTeamAvg) {
         console.log('Mary & John Teams are the winners')
     }
 
-    else if(maryTeamAvg == mikeTeamAvg && mikeTeamAvg > johnTeamAvg  ) {
+    else if(maryTeamAvg === mikeTeamAvg && mikeTeamAvg > johnTeamAvg  ) {
         console.log('Mary & Mike Teams are the winners')
     }
 
-    else if(johnTeamAvg == mikeTeamAvg && johnTeamAvg > maryTeamAvg  ) {
+    else if(johnTeamAvg === mikeTeamAvg && johnTeamAvg > maryTeamAvg  ) {
         console.log('John & Mike Teams are the winners')
     }
     else {
         console.log('All teams are winners')
-
     }
 }
 console.log(johnTeamAvg);
