@@ -8,7 +8,7 @@
 initial-scale=1.0" />
     <title>Document</title>
 </head>
-
+<!-- 
 <body>
     <h1>Header</h1>
     <p>Paragraph</p>
@@ -19,8 +19,62 @@ initial-scale=1.0" />
     <input type="text" />
     <input type="text" />
     <input type="text" />
-    <script src="./scripts/index.js"></script>
+</body> -->
+<!-- <style>
+    h1 {
+        color: red;
+    }
+
+    p {
+        font-size: 20px;
+    }
+</style> -->
+
+<body>
+    <!-- <h1>
+        I hate the color red. If only I was blue and I can sing "Im
+        blue da da di
+        da da daaa"
+    </h1>
+    <p class="paragraph">I wish I was bigger</p>
+    <div id="description">
+        Select me and change my display property if you dare!
+    </div> -->
+
+    <!-- <div id="myFirstDiv"></div>
+    <div id="mySecondDiv"></div>
+    <div id="myThridDiv"></div>
+    <div id="myFourthDiv"></div>
+    -->
+    <ul>
+        <li>title 1</li>
+        <li class="start-here">title 2</li>
+        <li>
+            <ul>
+                <li>sub title 1</li>
+                <li>sub title 2</li>
+                <li>sub title 3</li>
+            </ul>
+        </li>
+        <li>title 3</li>
+    </ul>
+    <div>
+        <p>Hello World!</p>
+    </div>
+    <script src="./scripts/index.js">
+        document.querySelector('p').textContent = 'My new text'
+        let startHere = document.querySelector('start-here')
+document.querySelector('li').textContent = 'main title';
+let secondUl = document.querySelectorAll('ul')[1];
+console.log(secondUl)
+secondUl.appendChild(document.createElement('li').innerHTML) = `<li> sub title 4 </li>`;
+document.querySelector("ul").lastElementChild.remove();
+document.title = "Master Of The Dom";
+document.querySelector('p').textContent = 'My new text'
+
+    </script>
 </body>
+
 
 
 </html>
