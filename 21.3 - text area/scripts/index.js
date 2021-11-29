@@ -8,11 +8,11 @@ textArea.addEventListener('input', () => {
 
     if (textArea.value.length >= 100) {
         console.log(textArea.value.length);
-       box.textContent = 'you can submit now'
-       box.style.color= 'green';
+        box.textContent = 'you can submit now'
+        box.style.color = 'green';
     } else {
         box.textContent = 'you did not reach the minimum characters'
-        box.style.color= 'red';
+        box.style.color = 'red';
     }
 })
 
