@@ -12,7 +12,6 @@ dec.addEventListener('click', () => {
         num--;
         let font = text.style.fontSize = `${num}px`;
         console.log(font)
-
         return font;
     }
 })
@@ -23,8 +22,8 @@ inc.addEventListener('click', () => {
         num++;
         let font = text.style.fontSize = `${num}px`;
         console.log(font)
-
         return font;
     }
 })
+
 
