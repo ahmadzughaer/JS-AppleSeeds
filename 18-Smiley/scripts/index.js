@@ -1,7 +1,7 @@
+let input = document.querySelector('.input');
 
 document.querySelector('.submit').addEventListener('click', () => {
-
-    let num = document.querySelector('.input').value;
+    let num = input.value;
     let regex = /^[0-9]+$/;
     if (num.match(regex)) {
         for (let i = 0; i < +num; i++) {
@@ -11,13 +11,18 @@ document.querySelector('.submit').addEventListener('click', () => {
             box.appendChild(div)[i];
         };
     } else {
-        alert('enter number');
+        alert('enter a number');
     }
-    return box.value='';
+    return ;
 })
 
 // document.querySelector('.submit').addEventListener('click', () => {
 //     window.location.reload()
 // }) 
+
+
+// input.onkeyup = () => {
+//     location.reload()
+// }
 
 
