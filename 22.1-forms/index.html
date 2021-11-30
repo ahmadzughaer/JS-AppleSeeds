@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form id="form-submit" method="get" action="/nowhere">
+        <label for="name">Full name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age"><br>
+        <label for="email">Email address:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <input id='btn' type="submit" value="Submit">
+    </form>
+
+    <div class="values" >
+        <p class="yourName"></p>
+        <p class="yourAge"></p>
+        <p class="yourEmail"></p>
+        <input id='verfiy' type="button" value="verfiy">
+    </div>
+    <h2 class="congrat">Congratulations you successfully sent this form</h2>
+    <input id='change' type="button" value="change info">
+
+
+<script src="/script/scripts.js"></script>
+</body>
+
+</html>
