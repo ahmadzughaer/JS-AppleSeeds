@@ -41,7 +41,6 @@ const isString = new Promise((resolve, reject) => {
                 console.log(el)
                 resolve();
             })
-            resolve();
         }
     }
 
