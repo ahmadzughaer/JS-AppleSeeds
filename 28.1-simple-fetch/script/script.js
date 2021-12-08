@@ -16,9 +16,21 @@ const getJoke = () => {
     .catch((e) => (jokeHolder.textContent = 'try again'));
 };
 
+const getJoke2 = async () => {
+  jokeHolder.textContent = 'Loading 🥪🥪🥪🥪';
+  try {
+    const data = await (await fetch(baseURL)).json()
+    jokeHolder.textContent = data.contents.jokes[0].joke.text
+     jokeTitle.textContent = data.contents.jokes[0].joke.title
+  }
+  catch {
+    jokeHolder.textContent = 'try again'
+  }
+}
 
 jokebtn.addEventListener('click', () => {
   getJoke()
+  getJoke2()
   jokebtn.style.display = 'none'
   backBtn.style.display='block'
 });
