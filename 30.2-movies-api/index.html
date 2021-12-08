@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies API'S</title>
+    <style>
+        body {
+            display: flex;
+        }
+
+        .leftSide {
+            width: 20vw;
+            height: 90vh;
+            border: 1px solid red;
+            display: block;
+            text-align: center;
+
+        }
+
+
+        .poster {
+            width: 10em;
+            height: 10em;
+            justify-content: center;
+
+        }
+
+        .card {
+            margin-left: 1%;
+            border: black 1px solid;
+            height: 50%;
+            width: 15%;
+            visibility: hidden;
+        }
+
+       .inside {
+           margin-left: 4%;
+       }
+
+       .rating {
+           display: block;
+       }
+    </style>
+    <script src="/script/script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="leftSide">
+        <h3>Enter Movie Name</h3>
+        <input type="text" name="" id="movieName">
+        <button class="submit">Submit</button>
+    </div>
+    <div class="card">
+        <div class="inside">
+            <h3>Movie Data</h3>
+            <img class="poster" src="" alt="">
+            <p class="title">Title</p>
+            <p class="genre">Genre</p>
+            <p class="year">Year</p>
+            <p class="plot">Plot</p>
+            <p class="director">Director</p>
+            <p class="actors">Actors</p>
+            <div class="rating">
+                <p class="imdRating">IMD rating:  </p>
+                 <p class="tomatoesRating">Rotten Tomatoes rating:  </p>
+                 <p class="metaRating">Metacritic rating:  </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
